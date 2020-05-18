@@ -9,7 +9,7 @@
   text-align: center;
   grid-area: header;
   height: auto;
-  padding: 10vh;
+  padding: 0px 10vh;
 }
 
 .header {
@@ -41,9 +41,72 @@ button {
   margin: 10px;
 }
 
-body {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "content";
+.desc {
+  font-size: 20px;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 920px) {
+  .caution {
+    overflow: hidden;
+    height: 60px;
+    margin: 30px 0px;
+    grid-area: content;
+    object-fit: cover;
+  }
+
+  .head {
+    text-align: center;
+    grid-area: header;
+    height: auto;
+    padding: 50px 0px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h3 {
+    font-weight: 100 !important;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 0px 20px;
+  }
+
+  .desc {
+    font-size: 15px;
+    padding: 0px 20px;
+  }
+
+  #leaf {
+    float: left;
+    height: 60px;
+  }
+
+  .name {
+    font-weight: 100 !important;
+    font-size: 40px;
+    display: inline;
+  }
+
+  button {
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+  }
+
+  body {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "content";
+  }
 }
