@@ -1,0 +1,49 @@
+.caution {
+  width: 100vw;
+  overflow: hidden;
+  margin: 30px 0px;
+  grid-area: content;
+}
+
+.head {
+  text-align: center;
+  grid-area: header;
+  height: auto;
+  padding: 10vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-weight: 100 !important;
+  font-size: 60px;
+}
+
+#leaf {
+  float: left;
+  height: 100px;
+}
+
+.name {
+  font-weight: 100 !important;
+  font-size: 60px;
+  display: inline;
+}
+
+button {
+  height: 70px;
+  font-size: 40px;
+  text-align: center;
+  margin: 10px;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content";
+}

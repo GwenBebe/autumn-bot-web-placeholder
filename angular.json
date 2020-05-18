@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "autumn-bot-web"
+    }
+  },
+  "defaultProject": "autumn-bot-web",
+  "cli": {
+    "analytics": "72de46e2-1e71-4720-a8d0-7db91957a080"
+  }
 }
